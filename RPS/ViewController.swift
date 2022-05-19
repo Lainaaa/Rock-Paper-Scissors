@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     func resetBoard() {
             appSign.text = "🤖"
-            statusOfTheGame.text = "Rock, Paper Scissors?"
+            statusOfTheGame.text = "Rock, Paper or Scissors?"
         fistedHandButton.isHidden = false
         fistedHandButton.isEnabled = true
         raisedHandButton.isHidden = false
@@ -26,8 +26,7 @@ class ViewController: UIViewController {
         playAgainButton.isEnabled = true
         playAgainButton.isHidden = true
         }
-
-
+    
     @IBOutlet weak var appSign: UILabel!
     @IBOutlet weak var statusOfTheGame: UILabel!
     @IBOutlet weak var playAgainButton: UIButton!
@@ -73,7 +72,7 @@ class ViewController: UIViewController {
                 view.backgroundColor = .green
                 
             case.start:
-        statusOfTheGame.text = "Rock, Paper, Scissors"
+        statusOfTheGame.text = "Rock, Paper or Scissors"
             }
     
     switch playerTurn {
